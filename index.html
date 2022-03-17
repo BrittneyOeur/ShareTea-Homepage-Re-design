@@ -1,10 +1,110 @@
+<!--
+Brittney Oeur
+-->
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Hello World</title>
+    <title>Sharetea - Bubblicious tea since 1992.</title>
+    <link href="HomeCSS.css" type="text/css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
+    <nav>
+      <img class ="logo" src="Sharetea.png" alt="Sharetea logo" width="10%" height="10%" align="left"/>
 
+      <div class="home">
+        <a href="#">Home</a>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Drinks<i class="arrow_down"></i></button>
+        <div class="dropdown-content">
+          <a href="Milk_Tea.html">Milk Tea</a>
+          <a href="Fruit_Tea.html">Fruit Tea</a>
+          <a href="Fresh_Milk.html">Fresh Milk</a>
+          <a href="Signature.html">Signature</a>
+          <a href="Brewed_Tea.html">Brewed Tea</a>
+          <a href="Ice_Blended.html">Ice Blended</a>
+          <a href="Menu.html">Menu</a>
+        </div>
+      </div>
+      <div class="links">
+        <a href="Stores.html">Stores</a>
+        <a href="Catering.html">Catering</a>
+        <a href="Franchise.html">Franchise</a>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">About<i class="arrow_down"></i></button>
+        <div class="dropdown-content">
+          <a href="#">News</a>
+          <a href="#">Pivacy Policy</a>
+        </div>
+      </div>
+
+      <div class="order">
+        <a href="#">Order Now</a>
+      </div>
+    </nav>
+
+    <div class="Slideshow">
+        <a href="Milk_Tea.html"><img src="Promo4.jpg" class="Promo_1"></a>
+        <a href="Milk_Tea.html"><img src="Promo2.jpg" class="Promo_1"></a>
+        <a href="Milk_Tea.html"><img src="Promo1.jpg" class="Promo_1"></a>
+
+      <button class="displayleft" onclick="plusSlides(-1)">&#10094;</button>
+      <button class="displayright" onclick="plusSlides(1)">&#10095;</button>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <div class="TopDrinks">
+        <p class="title10">Top 10 Drinks</p>
+        <p class="top10desc">Our drinks are made from high quality tea leaves and selected ingredients shipped directly from Taiwan.</p>
+
+        <table>
+          <tr>
+            <td><a href="Milk_Tea.html"><img class="Top10" src="Classic_Pearl_Milk_Tea.png" alt="Milk Tea"><p class="drinkName"><b>1.</b> Classic Pearl Milk Tea</p></a></td>
+            <td><a href="Milk_Tea.html"><img class="Top10" src="Lime_Mojito.png" alt="Lime_Mojito"><p class="drinkName"><b>2.</b> Lime Mojito</p></a></td>
+            <td><a href="Milk_Tea.html"><img class="Top10" src="Peach_Kiwi_Tea_Aiyu_Jelly.png" alt="Peach Kiwi Tea with Aiyu Jelly"><p class="drinkName"><b>3.</b> Peach Kiwi Tea w/ Aiyu Jelly</p></a></td>
+            <td><a href="Milk_Tea.html"><img class="Top10" src="Thai_Tea_Ice_Blended.png" alt="Thai Tea Ice Blended with Pearl"><p class="drinkName"><b>4.</b> Thai Tea Ice Blended w/ Pearl</p></a></td>
+            <td><a href="Milk_Tea.html"><img class="Top10" src="QQ_Happy_Family_Milk_Tea.png" alt="QQ Happy Family Milk Tea"><p class="drinkName"><b>5.</b> QQ Happy Family Milk Tea</p></a></td>
+          </tr>
+          <tr>
+            <td><a href="Milk_Tea.html"><img class="Top10" src="Strawberry_Ice_Blended_Ice_Cream.png" alt="Strawberry Ice Blended"><p class="drinkName"><b>6.</b> Strawberry Ice Blended w/ Ice Cream</p></a></td>
+            <td><a href="Milk_Tea.html"><img class="Top10" src="Coffee_Milk_Tea.png" alt="Coffee Milk Tea"><p class="drinkName"><b>7.</b> Coffee Milk Tea</p></a></td>
+            <td><a href="Milk_Tea.html"><img class="Top10" src="Matcha_with_Fresh_Milk.png" alt="Matcha with Fresh Milk"><p class="drinkName"><b>8.</b> Matcha w/ Fresh Milk</p></a></td>
+            <td><a href="Milk_Tea.html"><img class="Top10" src="Wintermelon_Lemonade.png" alt="Wintermelon Lemonade"><p class="drinkName"><b>9.</b> Wintermelon Lemonade</p></a></td>
+            <td><a href="Milk_Tea.html"><img class="Top10" src="Hawaii_Fruit_Tea_Aiyu_Jelly.png" alt="Hawaii Fruit Tea with Aiyu Jelly"><p class="drinkName"><b>10.</b> Hawaii Fruit Tea w/ Aiyu Jelly</p></a></td>
+          </tr>
+        </table>
+
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="SocialMedia">
+        <a href="https://www.facebook.com/shareteaglobal" target="_blank" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/sharetea" target="_blank" class="fa fa-instagram"></a>
+        <a href="" class="fa fa-envelope"></a>
+      </div>
+
+      <div class="Footer_Buttons">
+        <a href="#">About</a>
+        <a href="#">News</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms and Conditions</a>
+        <a href="#">Accessibility</a>
+      </div>
+    </div>
+    <script src="Home.js"></script>
   </body>
 </html>
